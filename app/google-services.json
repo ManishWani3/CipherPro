@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "268404485168",
+    "firebase_url": "https://cipher-pro.firebaseio.com",
+    "project_id": "cipher-pro",
+    "storage_bucket": "cipher-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268404485168:android:994f4d0d9e565eb29f11f5",
+        "android_client_info": {
+          "package_name": "com.manish.cipher_pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268404485168-adli93huro16ufuaimvth6g566f23iam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwQbpRi-SU7w_sAsrQt7U6k_EdSdXoRTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268404485168-adli93huro16ufuaimvth6g566f23iam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

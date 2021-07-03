@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Video">
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="239dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+
+            android:id="@+id/radio_encrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_encryption_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Encryption"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/radio_decrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_decryption_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="Decryption"
+            android:textColor="@android:color/tertiary_text_dark" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/editTextTextMultiLine1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="137dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:text="SELECT VIDEO"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine1" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/input_bg2"
+        android:ems="10"
+        android:hint="Create Secret-Key"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPasswordI1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/input_bg2"
+        android:ems="10"
+        android:hint="Create Initialization-Vector"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1" />
+
+    <Button
+        android:id="@+id/encro_image"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/encrypt_upload"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordI1" />
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:background="@drawable/copy_paste_button"
+        android:text="Share"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/encro_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

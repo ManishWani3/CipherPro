@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cipher-Pro</string>
+    <string name="logout">Logout</string>
+    <string name="menu">Menu</string>
+    <string name="text">Text</string>
+    <string name="todo">TODO</string>
+    <string name="audio">Audio</string>
+    <string name="image">Image</string>
+    <string name="video">Video</string>
+    <string name="text_view">Text View</string>
+    <string name="encrypt_upload"><![CDATA[ENCRYPT & UPLOAD]]></string>
+</resources>
